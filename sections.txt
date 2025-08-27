@@ -1,0 +1,88 @@
+1. Navigation
+-------------
+- Fixed top navigation bar with smooth scrolling to sections.
+- Sample logo (initials or personal brand mark).
+- Links: Home, About, Tech, Projects, Experience, Education, Contact.
+- Theme toggle (light/dark mode).
+- Mobile menu (hamburger → dropdown).
+
+2. Hero
+-------
+- Display name prominently (big, bold).
+- Role/Title: e.g., "Full-Stack Developer" or "Software Engineer | Problem Solver".
+- Short description (2–3 sentences about passion, specialties, and goals).
+- Call-to-action buttons: "View Projects" and "Contact Me".
+- Optional: profile photo/avatar.
+- Background effect (gradient, subtle animation, or framer-motion).
+
+3. About
+--------
+- Few short paragraphs introducing yourself:
+  - Background in tech or education.
+  - Core strengths (problem-solving, scalable systems, design thinking).
+  - Areas of interest (AI, Web Dev, Cloud, etc.).
+- Highlight achievements (open-source contributions, hackathons).
+- Optional: add a fun personal fact to show personality.
+
+4. Tech Stack
+-------------
+- Categorize skills:
+  - Languages: JavaScript, TypeScript, Python, etc.
+  - Frameworks/Libraries: React, Next.js, Node.js, etc.
+  - Databases: MongoDB, PostgreSQL, etc.
+  - Tools/Platforms: Git, Docker, AWS, etc.
+- Use icons or styled badges for quick recognition.
+- Optional: “Currently Learning” subsection.
+
+5. Projects
+-----------
+- Showcase 3–6 best projects (quality > quantity).
+- Each project card includes:
+  - Screenshot/thumbnail
+  - Title
+  - Short description
+  - Tech stack used
+  - Links: Live Demo + GitHub repo
+- Optional enhancements:
+  - Filters (e.g., web, mobile, open-source).
+  - One “Featured Project” with extended details.
+  - Hover effects and animations.
+
+6. Experience
+-------------
+- List jobs, internships, or freelance work.
+- Format:
+  - Company – Role (Dates)
+  - Brief description of responsibilities
+  - 2–4 bullet points of achievements
+- Add company logos.
+- Optional timeline layout.
+
+7. Education
+------------
+- List academic background and certifications.
+- Format:
+  - Institution – Degree/Program (Years)
+  - Special achievements (GPA, scholarships, awards)
+- Add relevant certifications (online courses, bootcamps).
+- Optional: Resume download button.
+
+8. Contact
+----------
+- Clear and inviting:
+  - Email link
+  - Social links: GitHub, LinkedIn, Twitter/X
+  - Contact form (Formspree, Getform, or Next.js API + Nodemailer)
+- Optional:
+  - Location (city, country)
+  - Animated header: “Let’s Talk 👋”
+  - Show availability status (e.g., “Open to Work”)
+
+
+Global Enhancements
+-------------------
+- Smooth scrolling and transitions (framer-motion).
+- Consistent design (colors, fonts, spacing).
+- Responsive design (mobile-first).
+- SEO setup (meta tags, Open Graph).
+- Accessibility (keyboard navigation, ARIA labels).
