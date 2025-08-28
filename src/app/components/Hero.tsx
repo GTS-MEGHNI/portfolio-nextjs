@@ -41,23 +41,23 @@ export default function Hero() {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6">
+        <div className="flex flex-wrap justify-center gap-3 mb-6">
           <a
             href="#projects"
-            className="btn btn-primary btn-md sm:btn-lg w-full sm:w-auto rounded-md shadow-sm hover:shadow-md transition-shadow duration-200"
+            className="btn btn-primary btn-md rounded-md shadow-sm hover:shadow-md transition-shadow duration-200"
           >
             View My Work
           </a>
           <a
             href="#contact"
-            className="btn btn-outline btn-md sm:btn-lg w-full sm:w-auto rounded-md shadow-sm hover:shadow-md transition-shadow duration-200"
+            className="btn btn-outline btn-md rounded-md shadow-sm hover:shadow-md transition-shadow duration-200"
           >
             Get In Touch
           </a>
           <a
             href="/resume.pdf"
             target="_blank"
-            className="btn btn-secondary btn-md sm:btn-lg w-full sm:w-auto rounded-md shadow-sm hover:shadow-md transition-shadow duration-200"
+            className="btn btn-secondary btn-md rounded-md shadow-sm hover:shadow-md transition-shadow duration-200"
           >
             View Resume
           </a>

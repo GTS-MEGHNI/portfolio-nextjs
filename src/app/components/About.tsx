@@ -1,20 +1,53 @@
+"use client";
+
 import React from "react";
 import { aboutText, coreStrengths, interests } from "@/app/data/about";
+import { motion, Variants } from "framer-motion";
+
+// Container variant for staggering children
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      delayChildren: 0.2,
+    },
+  },
+};
+
+// Individual item variant
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut" as const, // TS-safe
+    },
+  },
+};
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-base-200">
+    <motion.section
+      id="about"
+      className="py-20 bg-base-200"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Who Am I</h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
-        </div>
+        </motion.div>
 
         {/* Grid */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div>
+          <motion.div variants={itemVariants}>
             <div className="prose prose-lg max-w-none">
               {aboutText.map((paragraph, idx) => (
                 <p key={idx} className="text-lg leading-relaxed mb-6">
@@ -22,12 +55,15 @@ export default function About() {
                 </p>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Cards */}
-          <div className="space-y-6">
+          <motion.div variants={itemVariants} className="space-y-6">
             {/* Core Strengths */}
-            <div className="card bg-base-100 shadow-xl">
+            <motion.div
+              variants={itemVariants}
+              className="card bg-base-100 shadow-xl"
+            >
               <div className="card-body">
                 <h3 className="card-title text-primary">Core Strengths</h3>
                 <div className="flex flex-wrap gap-2 mt-2">
@@ -41,10 +77,13 @@ export default function About() {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Interests */}
-            <div className="card bg-base-100 shadow-xl">
+            <motion.div
+              variants={itemVariants}
+              className="card bg-base-100 shadow-xl"
+            >
               <div className="card-body">
                 <h3 className="card-title text-secondary">Interests</h3>
                 <div className="flex flex-wrap gap-2 mt-2">
@@ -58,10 +97,10 @@ export default function About() {
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
