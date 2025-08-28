@@ -1,10 +1,10 @@
 import React from "react";
-import '@/app/globals.css'
+import "@/app/globals.css";
 
-import {Inter} from 'next/font/google'
-import {NextFont} from "next/dist/compiled/@next/font";
+import { Inter } from "next/font/google";
+import { NextFont } from "next/dist/compiled/@next/font";
 
-const inter:NextFont = Inter({subsets:['latin']})
+const inter: NextFont = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -13,9 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
