@@ -1,4 +1,4 @@
-"use client";
+// noinspection HtmlUnknownAnchorTarget
 
 export function Navbar() {
     return (
@@ -21,7 +21,7 @@ export function Navbar() {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="#hero" className="nav-link">Home</a></li>
+                        <li><a href="#home" className="nav-link">Home</a></li>
                         <li><a href="#about" className="nav-link">About</a></li>
                         <li><a href="#tech-stack" className="nav-link">Tech Stack</a></li>
                         <li><a href="#projects" className="nav-link">Projects</a></li>
@@ -34,7 +34,7 @@ export function Navbar() {
 
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a href="#hero" className="nav-link">Home</a></li>
+                    <li><a href="#home" className="nav-link">Home</a></li>
                     <li><a href="#about" className="nav-link">About</a></li>
                     <li><a href="#tech-stack" className="nav-link">Tech Stack</a></li>
                     <li><a href="#projects" className="nav-link">Projects</a></li>
