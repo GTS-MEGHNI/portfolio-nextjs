@@ -1,7 +1,4 @@
-// Hamburger.tsx
-"use client";
-
-import React, {ReactElement} from "react";
+import {ReactElement} from "react";
 import {Menu, X} from "lucide-react";
 
 interface Props {
